@@ -1,0 +1,29 @@
+package com.qualitystream.pom;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage extends Base {
+	
+	By nombre = By.id("form_name");
+	By email = By.name("email");
+	By password = By.name("password");
+	By login = By.name("login");
+	By logout = By.id("logout");
+	By bienvenida = By.tagName("strong");
+
+	public LoginPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public LoginLogout() {
+		
+	}
+	
+	public LoginWelcome() {
+		
+	}
+	
+	
+}

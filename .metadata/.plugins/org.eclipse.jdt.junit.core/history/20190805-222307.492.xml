@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ProjectJavaScriptTest" project="QualityStreamTutorial" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qualitystream.tutorial.ProjectJavaScriptTest" time="7.032">
+    <testcase name="testLoginLogout" classname="com.qualitystream.tutorial.ProjectJavaScriptTest" time="4.003"/>
+    <testcase name="testLoginWelcome" classname="com.qualitystream.tutorial.ProjectJavaScriptTest" time="3.029"/>
+  </testsuite>
+</testrun>

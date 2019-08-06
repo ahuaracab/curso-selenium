@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginTestSuite" project="QualityStreamTutorial" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qualitystream.pom.LoginTestSuite" time="8.191">
+    <testsuite name="com.qualitystream.pom.LoginLogoutTest" time="5.357">
+      <testcase name="test" classname="com.qualitystream.pom.LoginLogoutTest" time="5.357"/>
+    </testsuite>
+    <testsuite name="com.qualitystream.pom.LoginWelcomeTest" time="2.834">
+      <testcase name="test" classname="com.qualitystream.pom.LoginWelcomeTest" time="2.834"/>
+    </testsuite>
+  </testsuite>
+</testrun>

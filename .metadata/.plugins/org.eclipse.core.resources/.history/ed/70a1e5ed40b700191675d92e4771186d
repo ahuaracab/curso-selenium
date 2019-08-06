@@ -1,0 +1,66 @@
+package com.qualitystream.tutorial;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ProjectJavaScriptTest {
+	private WebDriver driver;
+	
+	@Before
+	public void setUp() {
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("file:///home/ahuaracab/Desktop/web/curso-javascript/proyecto-js/index.html");
+		
+	}
+	
+	@Test
+	public void testLogin() {
+		
+				
+		WebElement nombre = driver.findElement(By.id("form_name"));
+		WebElement email = driver.findElement(By.name("email"));
+		WebElement password = driver.findElement(By.name("password"));
+		WebElement login = driver.findElement(By.name("login"));
+		
+		
+		nombre.clear();
+		email.clear();
+		password.clear();
+				
+	
+		
+		nombre.sendKeys("angelo");
+		email.sendKeys("ahuaracab@ecodigital.pe");
+		password.sendKeys("ghlrd2j2.");
+		login.click();
+		
+		
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		
+//		WebElement nombre_span = driver.findElement(By.id("nombre"));
+//		WebElement apellidos_span = driver.findElement(By.id("apellidos"));
+//		WebElement edad_span = driver.findElement(By.id("edad"));
+		
+		WebElement logout = driver.findElement(By.id("logout"));
+		assertEquals("Cerrar sesión", logout.getText());
+		
+		
+	}
+	
+	@After
+	public void tearDown() {
+		driver.quit();
+	}
+	
+}
