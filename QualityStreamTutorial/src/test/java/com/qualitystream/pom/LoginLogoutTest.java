@@ -16,7 +16,9 @@ public class LoginLogoutTest {
 	public void setUp() throws Exception {
 		login_logout_page = new LoginLogoutPage(driver);
 		driver = login_logout_page.chromeDriverConnection();
-		login_logout_page.visit("file:///home/ahuaracab/Desktop/web/curso-javascript/proyecto-js/index.html");
+		login_logout_page.visit("file:///C:/Users/AngeloHB/Desktop/curso-javascript/curso-javascript/proyecto-js/index.html"); //windows
+		//login_logout_page.visit("file:///home/ahuaracab/Desktop/web/curso-javascript/proyecto-js/index.html"); linux
+		
 	}
 
 	@After
@@ -27,7 +29,7 @@ public class LoginLogoutTest {
 	public void test() throws InterruptedException {
 		login_logout_page.LoginLogout();
 		Thread.sleep(3000);
-		assertEquals("Cerrar sesiÃ³n", login_logout_page.LogoutMessage());
+		assertEquals("Cerrar sesión", login_logout_page.LogoutMessage());
 	}
 
 }

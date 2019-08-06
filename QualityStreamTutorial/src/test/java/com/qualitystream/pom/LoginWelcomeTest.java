@@ -16,7 +16,9 @@ public class LoginWelcomeTest {
 	public void setUp() throws Exception {
 		login_welcome_page = new LoginWelcomePage(driver);
 		driver = login_welcome_page.chromeDriverConnection();
-		login_welcome_page.visit("file:///home/ahuaracab/Desktop/web/curso-javascript/proyecto-js/index.html");
+		login_welcome_page.visit("file:///C:/Users/AngeloHB/Desktop/curso-javascript/curso-javascript/proyecto-js/index.html");//windows
+		//login_welcome_page.visit("file:///home/ahuaracab/Desktop/web/curso-javascript/proyecto-js/index.html");//linux
+		
 	}
 
 	@After
